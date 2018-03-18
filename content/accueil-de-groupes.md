@@ -1,5 +1,5 @@
 ---
-title: "Accueil de droupes"
+title: "Accueil de groupes"
 date: 2018-03-18T18:05:26+01:00
 draft: false
 menu:
