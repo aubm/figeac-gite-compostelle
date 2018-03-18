@@ -1,0 +1,11 @@
+baseURL = "http://figeac-gite-compostelle.fr/"
+languageCode = "fr-fr"
+title = "Figeac Gite Compostelle"
+theme = "site"
+
+googleAnalytics = "UA-38043974-4"
+
+[params]
+    phoneNumber = "06 74 73 22 69"
+    email = "gitedugua.figeac@gmail.com"
+    address = "Figeac Gîte Compostelle · 14 bis avenue du Maréchal Joffre 46100 Figeac"

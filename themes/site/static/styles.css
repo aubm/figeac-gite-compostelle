@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'grotesk';
+  src: url("fonts/grotesk_regular.woff2") format("woff2"), url("fonts/grotesk_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-image: url("img/background-texture.png");
+  font-family: 'grotesk', Arial, sans-serif;
+  font-size: 16px; }
+
+#header-bottom-headband {
+  position: absolute;
+  top: 586px;
+  left: 0;
+  right: 0;
+  height: 54px;
+  background: url("img/kraft.jpg"); }
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none; }
+
+.texture-bordered {
+  border-style: solid;
+  border-width: 6px;
+  -moz-border-image: url("img/kraft.jpg") 28 repeat;
+  -webkit-border-image: url("img/kraft.jpg") 28 repeat;
+  -o-border-image: url("img/kraft.jpg") 28 repeat;
+  border-image: url("img/kraft.jpg") 28 repeat; }
+
+.texture-bordered.top-only {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important; }
+
+.texture-bordered.border-thick {
+  border-width: 28px; }
+
+.page-header-info {
+  font-weight: bold;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  line-height: 40px; }
+
+.page-header-info a {
+  color: inherit; }
+
+.page-container {
+  background-image: url("img/bambous.jpeg");
+  background-size: auto 640px;
+  background-repeat: repeat-x;
+  background-position-x: center; }
+
+.page-container .page {
+  padding-top: 220px; }
+
+@media (max-width: 768px) {
+  .page-container .page {
+    padding-top: 18px; } }
+
+.page-container .page .content {
+  margin-left: 50px;
+  max-width: 700px; }
+
+.page-container .page .content p {
+  text-align: justify; }
+
+@media (max-width: 1200px) {
+  .page-container .page .content {
+    margin-left: 0; } }
+
+@media (max-width: 768px) {
+  .page-container .page .content {
+    margin: auto; } }
+
+aside .separator {
+  margin: 30px 0; }
+
+.aside-content {
+  width: 300px;
+  margin: auto;
+  border-radius: 5px; }
+
+.aside-content img {
+  width: 300px; }
+
+@media (max-width: 768px) {
+  .aside-content {
+    margin: auto auto 20px; } }
+
+@media (max-width: 992px) {
+  .aside-content {
+    width: 200px; }
+  .aside-content img {
+    width: 200px; } }
+
+.pricing {
+  border: solid 2px #ba8e66;
+  color: #624234;
+  background-image: url("img/kraft.jpg"); }
+
+.pricing h3 {
+  background-color: rgba(139, 69, 19, 0.1);
+  margin-top: 0;
+  text-align: center;
+  padding: 10px;
+  border-bottom: dashed 1px #624234; }
+
+.pricing p {
+  padding: 0 5px; }
+
+.main-nav {
+  background-image: url("img/kraft.jpg");
+  border: solid 2px #ba8e66;
+  color: #624234; }
+
+.main-nav li {
+  border-bottom: dashed 1px #624234;
+  font-weight: bold; }
+
+.main-nav li:last-child {
+  border-bottom: none; }
+
+.main-nav li.active a, .main-nav li.active a:hover, .main-nav li.active a:focus, .main-nav li.active a:active {
+  color: black;
+  background: inherit; }
+
+.main-nav li:hover, .main-nav li:active, .main-nav li:focus, .main-nav li.active {
+  background-color: rgba(139, 69, 19, 0.1); }
+
+.main-nav li a {
+  color: black; }
+
+.main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus {
+  background: inherit; }
+
+#image-gallery-container {
+  margin-bottom: 30px;
+  max-width: 700px;
+  max-height: 500px;
+  overflow: hidden;
+  background: black; }
+
+#image-gallery-container li {
+  height: 500px;
+  text-align: center; }
+
+#image-gallery-container li img {
+  width: 100%; }
+
+footer {
+  background-image: url("img/bambous.jpeg");
+  background-size: auto 640px;
+  background-repeat: repeat-x;
+  background-position-x: center;
+  padding: 42px 0 90px;
+  color: #fff; }
+
+#new-site-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #ba8e66;
+  display: block;
+  padding: 12px;
+  border-radius: 4px 0 0 0;
+  color: white;
+  font-style: italic;
+  width: 300px;
+  cursor: pointer;
+  opacity: .85; }
+
+@media (max-width: 768px) {
+  #new-site-alert {
+    width: 100%; } }
+
+.iframe-responsive-wrapper {
+  position: relative; }
+
+.iframe-responsive-wrapper .iframe-ratio {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.iframe-responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.guest-book div.guest-book-bloc {
+  margin: 18px 0;
+  background-image: url("img/kraft.jpg");
+  border-radius: 6px;
+  border: solid 2px #ba8e66;
+  padding: 6px; }
+
+.guest-book div.guest-book-bloc h6 {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-style: italic; }
+
+.guest-book div.guest-book-bloc p {
+  margin-bottom: 0; }
+
+form input, form textarea {
+  margin-bottom: 6px; }
+
+.social-logos img {
+  max-width: 78px;
+  height: 78px; }

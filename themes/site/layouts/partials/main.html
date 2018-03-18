@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+   <head>
+      <base href="/">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Gite du Gua - {{ .Title }}</title>
+      {{- if .Params.noIndex }}
+      <meta name="robots" content="noindex">
+      <meta name="googlebot" content="noindex">
+      {{ end -}}
+      <link rel="stylesheet" href="libs/bootstrap.min.css">
+      <link rel="stylesheet" href="libs/lightslider.css">
+      <link rel="stylesheet" href="styles.css">
+      <script src="/libs/jquery.min.js"></script>
+      <script src="/libs/bootstrap.min.js"></script>
+      <script src="/libs/lightslider.js"></script>
+      <script src="/js/slider.js"></script>
+   </head>
+   <body>
+      <div id="header-bottom-headband"></div>
+      <div class="page-container">
+         <header class="page-header-info">
+            <div class="container">
+               <span class="hidden-sm hidden-xs">
+               <i class="glyphicon glyphicon-home"></i>
+               {{ $.Site.Params.address }}
+               </span>
+               <span class="pull-right">
+               <span class="hidden-xs">
+               <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:{{ $.Site.Params.email }}">{{ $.Site.Params.email }}</a>
+               -
+               </span>
+               <i class="glyphicon glyphicon-earphone"></i> {{ $.Site.Params.phoneNumber }}
+               </span>
+            </div>
+         </header>
+         <div class="container page">
+            <div class="row">
+               <aside class="col-sm-4">
+                  <div class="text-center aside-content">
+                     <img src="/img/logo.jpg" class="texture-bordered"> <br>
+                  </div>
+                  <div class="separator"></div>
+                  <nav class="main-nav aside-content">
+                     <ul class="nav nav-pills nav-stacked">
+                     {{ $currentPage := . }}
+                     {{ range .Site.Menus.main }}
+                     <li
+                     {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }}>
+                     <a href="{{ .URL }}">{{ .Name }}</a>
+                     </li>
+                     {{ end }}
+                  </nav>
+                  <div class="separator"></div>
+                  <div class="pricing aside-content">
+                     <h3>Tarifs</h3>
+                     <p>15 places réparties sur 4 chambres</p>
+                     <p>Chambre de 6 places : nuitée 15€/personne</p>
+                     <p>Chambre de 4 places : nuitée 16€/personne</p>
+                     <p>Chambre de 3 places : nuitée 18€/personne</p>
+                     <p>Chambre de 2 places : nuitee 19€/personne</p>
+                     <p>Petit-déjeuner : 5€/personne</p>
+                     <p>Dîner : 13€/personne</p>
+                     </p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="pricing aside-content">
+                     <h3>Comment nous joindre</h3>
+                     <p><i>Téléphone portable</i></p>
+                     <p>{{ $.Site.Params.phoneNumber }}</p>
+                     <p><i>Adresse mail</i></p>
+                     <p><a href="mailto:{{ $.Site.Params.email }}" style="color:#624234;">{{ $.Site.Params.email }}</a></p>
+                  </div>
+                  <div class="separator"></div>
+               </aside>
+               <div class="col-sm-8 content">
+                  {{ if .Params.photos }}
+                  <div class="clearfix texture-bordered" id="image-gallery-container">
+                     <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                        {{ range .Params.photos }}
+                        <li>
+                           <img src="/contents/img/{{.}}"/>
+                        </li>
+                        {{end}}
+                     </ul>
+                  </div>
+                  {{ end }}
+                  <!-- END SLIDER -->
+                  <h1>{{ .Title }}</h1>
+                  {{ .Content }}
+                  {{ if .Params.guestBook }}
+                  <div class="guest-book">
+                     <div class="guest-book-bloc">
+                        <form action="https://guestbook-dot-figeac-gite-compostelle.appspot.com/new" method="POST">
+                           <input type="text" name="name" placeholder="Votre nom" class="form-control" required/>
+                           <input type="email" name="email" placeholder="Votre adresse email (facultatif)" class="form-control"/>
+                           <textarea name="content" placeholder="Votre message" class="form-control" required></textarea>
+                           <button type="submit" class="btn btn-default">Envoyer</button>
+                        </form>
+                     </div>
+                     {{ $messages := getJSON "https://guestbook-dot-figeac-gite-compostelle.appspot.com/messages" }}
+                     {{ if $messages }}
+                     {{ range $messages }}
+                     <div class="guest-book-bloc">
+                        <h6>De {{ .name }} - le {{ dateFormat "02/01/2006" .date }}</h6>
+                        <p>{{ .content }}</p>
+                     </div>
+                     {{end}}
+                     {{else}}
+                     <div class="guest-book-bloc">
+                        <p>Il n'y a aucun message dans le livre d'or, soyez le premier à écrire quelque chose !</p>
+                     </div>
+                     {{end}}
+                  </div>
+                  {{ end }}
+               </div>
+            </div>
+         </div>
+         <footer class="texture-bordered top-only border-thick">
+            <div class="container text-center">
+               <div class="row">
+                  <div class="col-md-3">
+                     <p>
+                        <i class="glyphicon glyphicon-home"></i>
+                        {{ $.Site.Params.address }}
+                     </p>
+                  </div>
+                  <div class="col-md-3">
+                     <p>
+                        <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:{{ $.Site.Params.email }}" style="color:inherit;">{{ $.Site.Params.email }}</a>
+                     </p>
+                  </div>
+                  <div class="col-md-2">
+                     <p>
+                        <i class="glyphicon glyphicon-earphone"></i> {{ $.Site.Params.phoneNumber }}
+                     </p>
+                  </div>
+                  <div class="col-md-4">
+                     <p class="social-logos">
+                        <a href="https://www.tripadvisor.fr/Hotel_Review-g616109-d4895211-Reviews-Gite_d_Etape_du_Gua-Figeac_Lot_Occitanie.html" target="_blank">
+                        <img src="/img/trip-advisor-logo.gif" alt="Trip Advisor"/>
+                        </a>
+                        <a href="http://haltesverscompostelle.fr/index.php/2-non-categorise/36-gite-du-gua" target="_blank">
+                        <img src="/img/haltes-vers-compostelle-logo.jpg" alt="Les Haltes vers Compostelle"/>
+                        </a>
+                        <a href="http://www.tourisme-lot.com/hebergement/rando-etape" target="_blank">
+                        <img src="/img/logo_randoetape.jpg" alt="Rando Etape Lot"/>
+                        </a>
+                        <a href="http://www.tourisme-lot.com/" target="_blank">
+                        <img src="/img/logo_lot_occitanie.jpg" alt="Lot Occitanie"/>
+                        </a>
+                        <a href="https://www.petitfute.com/" target="_blank">
+                        <img src="/img/logo_petit_fute.png" alt="Petit Fute"/>
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      {{ template "_internal/google_analytics.html" . }}
+   </body>
+</html>
