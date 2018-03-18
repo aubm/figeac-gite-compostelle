@@ -1,4 +1,4 @@
-baseURL = "http://www.figeac-gite-compostelle.fr"
+baseURL = "/"
 languageCode = "fr-fr"
 title = "Figeac Gite Compostelle"
 theme = "site"
