@@ -1,0 +1,15 @@
+language: go
+
+go:
+    - 1.10
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+
+script: ./deploy.sh
+
+env:
+    global:
+        - GITHUB_REPO: aubm/figeac-gite-compostelle
+        - secure: "x02SUATILn4rLZvI2HoXSoeG3nVZ6faq28Emew/feviBne9YOEKWe5YgAbqRsSCXfgjsU8uQn8mIAbN+bvOfnORJuLf3oZuuDNmov1YP3qezoGHEdum/ez1DYtJdoPQ4OKpltwixqAkhSeX/8xzRaCnoV3L+x0GltEzJfM+bLntZlfV2PFHoVSMjc9Iiyl5uadAm5eR/ak52nyjEUO5+oPHSxwqsXLn9rWFh7J25BN/aMxzvRvNHugli7/SmmcOx5wAhDPFZiTEL465DSLGlL1AhsOQf7eFZQG3bkMOy+F/YQ8wlAKccaRUDqFw1XmFbFoZNdXfu0TuzymjW5IXrifW47nMWpZJ7Pt+pV6WoC91zZK7MiSida9hBBm2pvUBnURN7oyhjpkFaa47HDFvVtEgqcNZMPE5T6AY3r/eQ6qM+uTWi3rnToHTfX860QEcMe3zTs1QoQ16C/mv1vskSRZH7Vfe7whcVtmFu+ea+ULUk2BHZ15GBREGiZdX6j2BQLPEmrv3ZmpSwyHzoqD7xaU3G8K1itU858BTvRx05/8c8DTJdw1653BSQKROTg3CwHZ9R6mVlQPdjE8EfhfhrnJ2v65XIOrck38YwUoo1pT+ABUZCCozLa8b9p7U9RtgZ1giB2G7jDOpE+R0B26vgYKd8K4spr4MtFUfwQFMd/lc="

@@ -40,7 +40,7 @@ Tout ce qui est oublié sur le chemin, revient au chemin.<br>
 C'est pourquoi, j'ai en stock quelques chaussettes, serviettes, tee-shirt qui remplaceront ceux perdus à une précédente étape.
 
 <p style="text-align:center;">
-  <img src="/contents/files/certificat_2017.png" alt="Certificat 2017" />
-  <img src="/contents/files/logo_rando_etape.jpg" alt="Rando Etape" style="max-width:290px;" />
-  <img src="/contents/files/logo_haltes_vers_compostelle.jpg" alt="Haltes vers Compostelle" style="max-width:290px;" />
+  <img src="contents/files/certificat_2017.png" alt="Certificat 2017" />
+  <img src="contents/files/logo_rando_etape.jpg" alt="Rando Etape" style="max-width:290px;" />
+  <img src="contents/files/logo_haltes_vers_compostelle.jpg" alt="Haltes vers Compostelle" style="max-width:290px;" />
 </p>

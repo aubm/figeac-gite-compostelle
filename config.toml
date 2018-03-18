@@ -1,4 +1,4 @@
-baseURL = "http://figeac-gite-compostelle.fr/"
+baseURL = "https://aubm.github.io/figeac-gite-compostelle/"
 languageCode = "fr-fr"
 title = "Figeac Gite Compostelle"
 theme = "site"

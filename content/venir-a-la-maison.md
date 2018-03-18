@@ -24,5 +24,5 @@ Continuez tout droit jusqu'à la maison (à environ 400m du pont).
 
 Le lendemain, vous serez sur le chemin pour repartir.
 
-<a href="http://www.chemindecompostelle.com/" target="_blank"><img src="/contents/files/miam-miam-dodo.gif" style="height: 260px;"></a>
+<a href="http://www.chemindecompostelle.com/" target="_blank"><img src="contents/files/miam-miam-dodo.gif" style="height: 260px;"></a>
 <a href="http://haltesverscompostelle.fr/" target="_blank"><img src="http://haltesverscompostelle.fr/images/logo-haltes-vers-compostelle-001--2-.jpg"  style="height: 260px; float: right;"></a>

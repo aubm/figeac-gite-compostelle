@@ -48,15 +48,15 @@ Je vous souhaite une belle visite de Figeac, et un formidable Chemin de Composte
 Cliquez sur l'image
 
 <a href="http://www.tourisme-figeac.com/" target="_blank">
-  <img src="/contents/files/figeac-tourisme.jpg" alt="Le tourisme à Figeac">
+  <img src="contents/files/figeac-tourisme.jpg" alt="Le tourisme à Figeac">
 </a>
 
 #### Fichiers à télécharger
 
-LE CHEMIN PAR ROCAMADOUR : <a href="/contents/files/Fiche-Rocamadour-3.pdf"  target="_blank">Télécharger le fichier</a>
+LE CHEMIN PAR ROCAMADOUR : <a href="contents/files/Fiche-Rocamadour-3.pdf"  target="_blank">Télécharger le fichier</a>
 
-LE CHEMIN PAR ROCAMADOUR Chemin alternatif : <a href="/contents/files/09A-Voie%20Rocamadour-2.pdf" target="_blank">Télécharger le fichier</a>
+LE CHEMIN PAR ROCAMADOUR Chemin alternatif : <a href="contents/files/09A-Voie%20Rocamadour-2.pdf" target="_blank">Télécharger le fichier</a>
 
-Le chemin à Rouen : <a href="/contents/files/Le%20Chemin%20a%CC%80%20Rouen.pdf" target="_blank">Télécharger le fichier</a>
+Le chemin à Rouen : <a href="contents/files/Le%20Chemin%20a%CC%80%20Rouen.pdf" target="_blank">Télécharger le fichier</a>
 
-Carte et hébergements sur voie du Célé et voie de Rocamadour : <a href="/contents/files/Carte%20Flyer%20Collectif%20Voies%20du%20LOT.pdf" target="_blank">Télécharger le fichier</a>
+Carte et hébergements sur voie du Célé et voie de Rocamadour : <a href="contents/files/Carte%20Flyer%20Collectif%20Voies%20du%20LOT.pdf" target="_blank">Télécharger le fichier</a>
