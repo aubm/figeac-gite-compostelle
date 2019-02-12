@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/le-chemin-et-figeac/</loc>
+    <lastmod>2018-03-18T18:17:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/inspirations/</loc>
+    <lastmod>2018-03-18T18:15:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/venir-a-la-maison/</loc>
+    <lastmod>2018-03-18T18:13:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/les-repas/</loc>
+    <lastmod>2018-03-18T18:10:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/accueil-de-groupes/</loc>
+    <lastmod>2018-03-18T18:05:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/livre-d-or/</loc>
+    <lastmod>2018-03-18T15:29:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/message-posted/</loc>
+    <lastmod>2018-03-18T15:29:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/gite-d-etape/</loc>
+    <lastmod>2018-03-18T14:40:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-03-18T14:36:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

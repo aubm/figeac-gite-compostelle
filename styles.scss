@@ -1,0 +1,255 @@
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+@font-face {
+  font-family: 'grotesk';
+  src: url("fonts/grotesk_regular.woff2") format("woff2"), url("fonts/grotesk_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url('img/background-texture.png');
+  font-family: 'grotesk', Arial, sans-serif;
+  font-size: 16px;
+}
+
+#header-bottom-headband {
+  position: absolute;
+  top: 586px;
+  left: 0;
+  right: 0;
+  height: 54px;
+  background: url('img/kraft.jpg');
+}
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+.texture-bordered {
+  border-style: solid;
+  border-width: 6px;
+  -moz-border-image: url('img/kraft.jpg') 28 repeat;
+  -webkit-border-image: url('img/kraft.jpg') 28 repeat;
+  -o-border-image: url('img/kraft.jpg') 28 repeat;
+  border-image: url('img/kraft.jpg') 28 repeat;
+
+  &.top-only {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+
+  &.border-thick {
+    border-width: 28px;
+  }
+}
+
+.page-header-info {
+  font-weight: bold;
+  height: 40px;
+  background: rgba(255, 255, 255, .8);
+  font-size: 13px;
+  line-height: 40px;
+
+  a {
+    color: inherit;
+  }
+}
+
+.page-container {
+  background-image: url('img/bambous.jpeg');
+  background-size: auto 640px;
+  background-repeat: repeat-x;
+  background-position-x: center;
+
+  .page {
+    padding-top: 220px;
+
+    @media(max-width: $screen-sm) {
+      padding-top: 18px;
+    }
+
+    .content {
+      margin-left: 50px;
+      max-width: 700px;
+
+      p {
+        text-align: justify;
+      }
+
+      @media(max-width: $screen-lg) {
+        margin-left: 0;
+      }
+
+      @media(max-width: $screen-sm) {
+        margin: auto;
+      }
+    }
+  }
+}
+
+aside {
+  .separator {
+    margin: 30px 0;
+  }
+}
+
+.aside-content {
+  $width: 300px;
+
+  width: $width;
+  margin: auto;
+  border-radius: 5px;
+
+  img {
+    width: $width;
+  }
+
+  @media(max-width: $screen-sm) {
+    margin: auto auto 20px;
+  }
+
+  @media(max-width: $screen-md) {
+    $width: 200px;
+
+    width: $width;
+
+    img {
+      width: $width;
+    }
+  }
+
+}
+
+.pricing {
+  border: solid 2px #ba8e66;
+  color: #624234;
+  background-image: url('img/kraft.jpg');
+
+  h3 {
+    background-color: rgba(139, 69, 19, 0.1);
+    margin-top: 0;
+    text-align: center;
+    padding: 10px;
+    border-bottom: dashed 1px #624234;
+  }
+
+  p {
+    padding: 0 5px;
+  }
+}
+
+.main-nav {
+  background-image: url('img/kraft.jpg');
+  border: solid 2px #ba8e66;
+  color: #624234;
+
+  $linkColor: black;
+
+  li {
+    border-bottom: dashed 1px #624234;
+    font-weight: bold;
+    &:last-child {
+      border-bottom: none;
+    }
+    &.active {
+      a, a:hover, a:focus, a:active {
+        color: $linkColor;
+        background: inherit;
+      }
+    }
+    &:hover, &:active, &:focus, &.active {
+      background-color: rgba(139, 69, 19, .1);
+    }
+    a {
+      color: $linkColor;
+      &:hover, &:active, &:focus {
+        background: inherit;
+      }
+    }
+  }
+}
+
+$gallery-height: 500px;
+
+#image-gallery-container {
+  margin-bottom: 30px;
+  max-width: 700px;
+  max-height: $gallery-height;
+  overflow: hidden;
+  background: black;
+
+  li {
+    height: $gallery-height;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  background-image: url('img/bambous.jpeg');
+  background-size: auto 640px;
+  background-repeat: repeat-x;
+  background-position-x: center;
+  padding: 42px 0 90px;
+  color: #fff;
+}
+
+.iframe-responsive-wrapper {
+  position: relative;
+}
+
+.iframe-responsive-wrapper .iframe-ratio {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.iframe-responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guest-book {
+  div.guest-book-bloc {
+    margin: 18px 0;
+    background-image: url('img/kraft.jpg');
+    border-radius: 6px;
+    border: solid 2px #ba8e66;
+    padding: 6px;
+
+    h6 {
+      margin-top: 0;
+      font-size: 0.9em;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+form {
+  input, textarea {
+    margin-bottom: 6px;
+  }
+}
+
+.social-logos {
+  img {
+    max-width: 78px;
+    height: 78px;
+  }
+}
